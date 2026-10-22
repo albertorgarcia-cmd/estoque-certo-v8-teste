@@ -1,0 +1,12 @@
+ESTOQUE CERTO V8 — PRÉVIA COMERCIAL (SEM COMPRA REAL)
+
+Publique em NOVO repositório: estoque-certo-v8-teste. Não substitua V3 a V7.
+
+Esta versão mantém o visual e as funções da V7, mas remove o desbloqueio simulado.
+Plano gratuito: até 50 produtos, com aviso a partir de 40.
+O botão Conhecer a versão completa apresenta a oferta PLANEJADA de R$ 79,90 para até 2.000 produtos, mas não realiza compra nem libera produtos.
+O desbloqueio oficial requer aplicativo Android integrado ao Google Play Billing e verificação segura de licença.
+NÃO publicar ou anunciar como versão comercial com pagamento funcional.
+
+IMPORTANTE: esta V8 utiliza uma chave de armazenamento local diferente da V7 para evitar alterar os dados da V7. Para trazer os dados, exporte backup JSON da V7 e restaure na V8 somente após fazer backup dos dados da V8; a restauração substitui dados locais.
+Os dados não sincronizam entre dispositivos.

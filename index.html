@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#173e35"><meta name="description" content="Inventário simples para pequenos comércios. Conte produtos, encontre diferenças e mantenha o estoque sob controle.">
+  <title>Estoque Certo Mobile — seu estoque, em dia</title>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="core.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<aside class="sidebar">
+  <a class="brand" href="#inicio" aria-label="Estoque Certo Mobile, início"><span class="brand-mark">▦</span><span>estoque<span class="brand-light">certo</span><small>MOBILE</small></span></a>
+  <p class="nav-caption">SEU COMÉRCIO, ORGANIZADO</p>
+  <nav aria-label="Navegação principal">
+    <button data-view="inicio" class="nav-item active"><span data-icon="dashboard"></span>Visão geral</button>
+    <button data-view="produtos" class="nav-item"><span data-icon="box"></span>Produtos <span class="nav-number" id="nav-products">100</span></button>
+    <button data-view="contagem" class="nav-item"><span data-icon="scan"></span>Contagem física</button>
+    <button data-view="relatorio" class="nav-item"><span data-icon="chart"></span>Diferenças</button>
+    <button data-view="backup" class="nav-item"><span data-icon="shield"></span>Dados e backup</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="local-dot"></div><strong>Seu estoque fica com você</strong><p>Dados neste navegador.<br>Faça backups para guardar uma cópia.</p><span class="version">V8 · PRÉVIA COMERCIAL</span></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span class="breadcrumb">Meu comércio <span>/</span> <strong id="breadcrumb">Visão geral</strong></span><div class="top-actions"><span class="save-state" id="save-state" role="status">● Salvo neste navegador</span><button class="icon-btn" id="quick-backup" aria-label="Baixar backup" title="Baixar backup"><span data-icon="download"></span></button></div></header>
+  <main id="main" tabindex="-1">
+    <div class="demo-banner"><span><span class="demo-pill">V8 · PRÉVIA COMERCIAL</span> <span id="demo-description">Comece com 20 produtos fictícios para explorar.</span></span><span class="desktop-only">Plano gratuito de 50 produtos · compra ainda indisponível.</span></div>
+    <section class="page-heading"><div><p class="eyebrow" id="eyebrow">CADA PRODUTO NO SEU LUGAR</p><h1 id="page-title">Seu estoque, em dia.</h1><p id="page-subtitle">Uma visão clara para cuidar do que faz seu comércio girar.</p></div><button class="btn primary" id="new-inventory"><span data-icon="plus"></span>Novo inventário</button></section>
+    <div class="inventory-selector"><label for="inventory-select">Inventário selecionado</label><select id="inventory-select"></select><span id="inventory-status" class="badge"></span></div>
+    <div id="view"></div>
+    <footer>Estoque Certo Mobile <span>•</span> Controle simples. Decisões melhores.</footer>
+  </main>
+</div>
+<dialog id="modal"><div class="modal-head"><h2 id="modal-title"></h2><button class="icon-btn" id="close-modal" aria-label="Fechar janela">✕</button></div><div id="modal-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>/*STANDALONE_MARKER*/</script>
+</body></html>
